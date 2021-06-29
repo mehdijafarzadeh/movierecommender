@@ -4,7 +4,7 @@ all algorithms return a list of movieids
 """
 
 
-from utils import movies
+from movierecommender.utils import movies
 
 
 def recommend_random(liked_items, k=5):

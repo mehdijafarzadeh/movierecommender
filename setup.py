@@ -9,18 +9,24 @@ def open_file(fname):
 setup(
     name='movierecommender',
     version='0.0.1',
-    author='Mehdi Jafarzadeh',
-    author_email='jafrzade.me@gmail.com',
+    author='Malte Bonart',
+    author_email='malte@spiced-academy.com',
     packages=find_packages(),
-    url='https://github.com/mehdijafarzadeh/movierecommender',
+    url='https://github.com/bonartm/movierecommender',
     license='MIT',
     classifiers=[
         'Programming Language :: Python :: 3.8',
     ],
-    description='',
+    package_data= {
+        'movierecommender': ['data/ml-latest-small/*.csv']
+    },
+    description='Implementation of various collaborative filtering methods',
     long_description=open_file('README.md').read(),
     # end-user dependencies for your library
     install_requires=[
-        
+        'pandas',
+        'scikit-learn',
+        'fuzzywuzzy',
+        'python-Levenshtein'        
     ],
 )
