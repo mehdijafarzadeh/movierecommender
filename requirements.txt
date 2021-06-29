@@ -5,3 +5,4 @@ fuzzywuzzy
 numpy
 python-Levenshtein
 gunicorn
+git+git:https://github.com/mehdijafarzadeh/movierecommender
