@@ -9,10 +9,10 @@ def open_file(fname):
 setup(
     name='movierecommender',
     version='0.0.2',
-    author='Malte Bonart',
-    author_email='malte@spiced-academy.com',
+    author='Mehdi Jafarzadeh',
+    author_email='jafarzade.me@gmail.com',
     packages=find_packages(),
-    url='https://github.com/bonartm/movierecommender',
+    url='https://github.com/mehdijafarzadeh/movierecommender',
     license='MIT',
     classifiers=[
         'Programming Language :: Python :: 3.8',

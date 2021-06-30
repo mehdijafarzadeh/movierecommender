@@ -1,23 +1,21 @@
 from fuzzywuzzy import process
 import pandas as pd
 import os
+import pickle
 
-# __file__
-# /home/malte/miniconda3/lib/python3.7/site-packages/movierecommender/utils.py
-
-# package_dir
-# /home/malte/miniconda3/lib/python3.7/site-packages/movierecommender/
 package_dir = os.path.dirname(__file__)
-
-# print(package_dir)
-
+print(package_dir)
 # put the movieId into the row index!
 movies_path = package_dir + '/data/ml-latest-small/movies.csv'
 movies = pd.read_csv(movies_path, index_col=0) 
+ratings_path = package_dir + '/data/ml-latest-small/ratings.csv'
+ratings = pd.read_csv(ratings_path)
+model_path = package_dir + '/model/model.pickle'
+with open(model_path, 'rb') as file:
+    model = pickle.load(file)
 movie_average_rating = None
 ratings = None
 movie_item_matrix = None
-
 
 
 def lookup_movie(search_query, titles):
