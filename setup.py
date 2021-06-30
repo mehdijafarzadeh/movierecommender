@@ -18,7 +18,8 @@ setup(
         'Programming Language :: Python :: 3.8',
     ],
     package_data= {
-        'movierecommender': ['data/ml-latest-small/*.csv']
+        'movierecommender': ['data/ml-latest-small/*.csv','data/ml-latest-small/*.pickle' ]
+        
     },
     description='Implementation of various collaborative filtering methods',
     long_description=open_file('README.md').read(),

@@ -10,11 +10,12 @@ movies_path = package_dir + '/data/ml-latest-small/movies.csv'
 movies = pd.read_csv(movies_path, index_col=0) 
 ratings_path = package_dir + '/data/ml-latest-small/ratings.csv'
 ratings = pd.read_csv(ratings_path)
-model_path = package_dir + '/model/model.pickle'
+model_path = package_dir + '/data/ml-latest-small/model.pickle'
 with open(model_path, 'rb') as file:
     model = pickle.load(file)
+
 movie_average_rating = None
-ratings = None
+
 movie_item_matrix = None
 
 

@@ -2,7 +2,8 @@
 Contains various recommondation implementations
 all algorithms return a list of movieids
 """
-
+import pandas as pd
+import numpy as np
 from movierecommender.utils import movies, ratings, model
 
 
