@@ -1,0 +1,10 @@
+{% extends "base.html" %} {% block content %}
+<h2>This is our recommendation:</h2>
+<ul>
+    {% for title in titles %}
+    <li>{{title}}</li>
+    {% endfor %}
+</ul>
+
+
+<a href="{{ url_for('homepage') }}">Go back to main page</a> {% endblock %}

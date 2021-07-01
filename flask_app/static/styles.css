@@ -1,0 +1,65 @@
+body {
+    text-align: center;
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    color: rgb(8, 8, 8);
+    height: 100%;
+    background-image: url('https://media-exp3.licdn.com/dms/image/C4D1BAQHt1ZX5w0btoQ/company-background_10000/0/1571227742534?e=2159024400&v=beta&t=jRDLg4LEITMYHZho96WhvFGcZFc0-M9dBLZNy1NE2tM');
+    background-size: cover;
+    background-attachment: fixed;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+
+#header_heading {
+    text-decoration: none;
+}
+
+#recommender {
+    font-family: sans-serif;
+    font-size: 12px;
+    color: black;
+    background-color: darkgray;
+    list-style: none;
+}
+
+#header_heading>h1 {
+    background-color: rgba(238, 238, 238, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.clear_message {
+    background-color: rgba(122, 121, 121, 0.5);
+    color: rgb(145, 221, 251);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.search_inputs {
+    width: 100%;
+    margin: 5px;
+    border: 1px solid rgb(214, 214, 214);
+    padding: 4px 8px;
+    border-radius: 3px;
+}
+
+.fixed-bottom {
+    font-size: 0.9rem;
+    padding: 5px 0;
+    background-color: rgba(251, 251, 251, 0.9);
+}
+
+.fixed-bottom p {
+    margin-bottom: 0;
+}
+
+.custom_submit {
+    margin-top: 5px;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    width: inherit;
+    /*position the autocomplete items to be the same width as the container:*/
+}

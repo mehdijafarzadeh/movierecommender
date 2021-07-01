@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block content %}
+<h2 class="clear_message">Please enter some movies and rate them</h2>
+<form id='rating_form' action="{{ url_for('recommend') }}">
+    {% for i in range(3) %}
+    <fieldset class="d-flex justify-content-center">
+        <input class="search_inputs" type="text" placeholder="Movie " name='movie'>
+        <input class="search_inputs" type="number" min="0" max="5" placeholder="Rating[0-5]" name='rating'>
+    </fieldset>
+    {% endfor %}
+    <div class="d-flex justify-content-center">
+        <input class="custom_submit btn btn-primary btn-sm" type="submit">
+    </div>
+
+</form>
+
+{% endblock %}
