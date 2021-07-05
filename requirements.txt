@@ -1,8 +1,8 @@
-flask
+# flask
 pandas
 scikit-learn
 fuzzywuzzy
 numpy
 python-Levenshtein
-gunicorn
-git+git:https://github.com/mehdijafarzadeh/movierecommender
+# gunicorn
+# git+git:https://github.com/mehdijafarzadeh/movierecommender
