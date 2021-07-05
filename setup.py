@@ -7,8 +7,8 @@ def open_file(fname):
 
 
 setup(
-    name='movierecommender',
-    version='0.0.2',
+    name='mehdi_movierecommender',
+    version='0.0.3',
     author='Mehdi Jafarzadeh',
     author_email='jafarzade.me@gmail.com',
     packages=find_packages(),
@@ -23,6 +23,7 @@ setup(
     },
     description='Implementation of various collaborative filtering methods',
     long_description=open_file('README.md').read(),
+    long_description_content_type='text/markdown',
     # end-user dependencies for your library
     install_requires=[
         'pandas',
