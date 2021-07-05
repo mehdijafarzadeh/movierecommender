@@ -1,6 +1,7 @@
 
 # movie_recommender
 
+[![Format python code](https://github.com/mehdijafarzadeh/movierecommender/actions/workflows/autopep.yml/badge.svg)](https://github.com/mehdijafarzadeh/movierecommender/actions/workflows/autopep.yml)
 ### The goals of this project were:
 - train a NMF model
 - write a Flask web interface for the recommender
