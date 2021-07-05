@@ -4,5 +4,6 @@ scikit-learn
 fuzzywuzzy
 numpy
 python-Levenshtein
+flake8
 # gunicorn
 # git+git:https://github.com/mehdijafarzadeh/movierecommender
